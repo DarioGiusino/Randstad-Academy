@@ -15,3 +15,26 @@ Classi di Utilità: La classe "Utilities" offre funzionalità di input da parte 
 Classe "Vendita" e astratta "RegistroVendite": Gestiscono la registrazione delle vendite dei giocattoli da parte dei clienti e la visualizzazione delle vendite stesse.
 
 L'applicazione, sviluppata come parte di un percorso formativo presso Randstad Academy, dimostra l'utilizzo dei concetti fondamentali di programmazione in Java per gestire un sistema di gestione di un negozio di giocattoli. Le classi e le interfacce sono progettate per offrire una solida base concettuale e pratica nella gestione di inventari, vendite e interazioni con i clienti.
+
+
+# FinalTest-Spring
+
+L'applicazione in questione è un progetto Spring Boot che gestisce un sistema di gestione di ordini, clienti e prodotti attraverso una serie di endpoint REST.
+
+Struttura del progetto:
+
+Il progetto è diviso in package che comprendono classi per entità, repository, servizi e controller.
+Le entità includono: Cliente, Ordine e Prodotto, ciascuna con le proprie proprietà e relazioni definite attraverso annotazioni JPA.
+I repository estendono JpaRepository e permettono l'interazione con il database per le operazioni CRUD relative alle entità.
+I servizi forniscono logica di business e gestiscono le operazioni sulle entità.
+I controller forniscono i punti di accesso REST per le operazioni CRUD sulle entità.
+Funzionalità:
+
+Cliente: Gli endpoint consentono di recuperare tutti i clienti, trovare un cliente per ID, salvare un nuovo cliente, aggiornare o eliminare un cliente.
+Ordine: Offre operazioni simili ai clienti, permettendo di gestire gli ordini in termini di recupero, creazione, aggiornamento ed eliminazione.
+Prodotto: Gestisce i prodotti attraverso operazioni CRUD, consentendo di accedere, creare, aggiornare o eliminare prodotti.
+Database:
+
+È configurato un database H2 in memoria (spring.datasource.url=jdbc:h2:mem:testdb), che si crea e distrugge con l'applicazione.
+Le proprietà di configurazione del datasource, del driver, dell'autenticazione e del ddl-auto per Hibernate sono specificate nel file application.properties.
+L'applicazione fornisce funzionalità di base per la gestione di un sistema di ordini, consentendo agli utenti di interagire con il database attraverso API REST.
