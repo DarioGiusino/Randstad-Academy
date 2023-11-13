@@ -1,0 +1,18 @@
+/* Imposta lo stile dell'overlay di sovrapposizione */
+.overlay {
+  position: fixed; /* Fissa l'elemento rispetto alla finestra del browser */
+  display: flex; /* Utilizza un layout flessibile per il contenuto interno */
+  justify-content: center; /* Centra orizzontalmente il contenuto */
+  align-items: center; /* Centra verticalmente il contenuto */
+  width: 100%; /* Occupa l'intera larghezza della finestra */
+  height: 100%; /* Occupa l'intera altezza della finestra */
+  top: 0; /* Allinea l'elemento in alto */
+  left: 0; /* Allinea l'elemento a sinistra */
+  background-color: rgba(
+    74,
+    74,
+    74,
+    0.8
+  ); /* Imposta un colore di sfondo semitrasparente */
+  z-index: 99999; /* Definisce lo z-index per sovrapporre eventuali elementi inferiori */
+}

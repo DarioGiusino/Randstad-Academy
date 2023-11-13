@@ -1,0 +1,14 @@
+/* Imposta lo spazio vuoto per separare gli elementi nella barra degli strumenti */
+.spacer {
+  flex: 1 1 auto; /* Utilizza il flessbox: crescerà e si restringerà in base allo spazio disponibile */
+}
+
+/* Aggiunge un margine sinistro agli elementi del menu per separarli visivamente */
+.menu-item {
+  margin-left: 1rem; /* Applica un margine a sinistra di 1 rem (unità relativa alla grandezza del carattere) */
+}
+
+/* Imposta il puntatore del mouse per tutti i link per indicare che sono cliccabili */
+a {
+  cursor: pointer; /* Imposta il puntatore del mouse come 'pointer' per tutti i link */
+}

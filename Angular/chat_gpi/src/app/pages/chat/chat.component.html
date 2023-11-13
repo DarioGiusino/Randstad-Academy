@@ -1,0 +1,21 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened class="sidenav">
+    <!-- Componente di ricerca utenti -->
+    <app-users-search (startUserSearch)="searchUser($event)"></app-users-search>
+
+    <!-- Lista degli utenti -->
+    <app-users-list
+      [users]="users"
+      (userSelected)="loadChat($event)"
+    ></app-users-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Finestra di chat -->
+    <app-chat-window
+      [senderId]="senderId"
+      [messages]="messages"
+      [receiver]="receiverId"
+    >
+    </app-chat-window>
+  </mat-sidenav-content>
+</mat-sidenav-container>

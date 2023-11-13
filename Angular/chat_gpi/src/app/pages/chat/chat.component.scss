@@ -1,0 +1,9 @@
+.sidenav {
+  width: 25%; /* Imposta la larghezza del sidenav al 25% del contenitore genitore */
+}
+
+.example-container {
+  height: calc(
+    100vh - 64px
+  ); /* Imposta l'altezza a 100% dell'altezza visibile della finestra del browser meno 64px */
+}

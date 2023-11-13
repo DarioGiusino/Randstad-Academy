@@ -1,0 +1,8 @@
+<div class="msg-container p-5">
+  <!-- Mostra i messaggi -->
+  <div *ngFor="let message of messages" class="msg-bubble">
+    {{ message.message }}
+  </div>
+</div>
+<!-- Componente per l'input del messaggio -->
+<app-chat-input [receiver]="receiver" [senderId]="senderId"></app-chat-input>

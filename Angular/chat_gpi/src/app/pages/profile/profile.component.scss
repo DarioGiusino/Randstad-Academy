@@ -1,0 +1,12 @@
+.sidenav {
+  width: 20%; /* Larghezza del pannello laterale */
+  text-align: center; /* Allinea il testo al centro all'interno del pannello */
+  padding-top: 1rem; /* Spazio sopra il contenuto nel pannello laterale */
+}
+
+.example-container {
+  height: calc(
+    100vh - 64px
+  ); /* Altezza del container principale, adattato all'altezza del viewport - 64px */
+  /* Il calcolo sottrae 64 pixel dall'altezza del viewport */
+}

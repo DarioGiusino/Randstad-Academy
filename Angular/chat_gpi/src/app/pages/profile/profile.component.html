@@ -1,0 +1,77 @@
+<mat-sidenav-container class="example-container">
+  <!-- Il pannello laterale con l'immagine del profilo -->
+  <mat-sidenav mode="side" opened class="sidenav">
+    <img width="90%" [src]="photoUrl" alt="Immagine profilo" />
+  </mat-sidenav>
+
+  <!-- Il contenuto principale della pagina del profilo -->
+  <mat-sidenav-content>
+    <!-- CARD - Card con i dettagli del profilo -->
+    <mat-card class="m-3">
+      <mat-card-content>
+        <mat-card-title class="mb-3">PROFILO</mat-card-title>
+
+        <!-- Form per modificare i dettagli del profilo -->
+        <form [formGroup]="userForm">
+          <!-- Accordion per i dati personali -->
+          <mat-accordion>
+            <mat-expansion-panel [expanded]="datiPersonaliOpenState" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>DATI PERSONALI</mat-panel-title>
+                <mat-panel-description
+                  >Pannello con i dati personali</mat-panel-description
+                >
+              </mat-expansion-panel-header>
+
+              <!-- Griglia per i campi dei dati personali -->
+              <mat-grid-list cols="4" rowHeight="100px">
+                <mat-grid-tile>
+                  <!-- Campo per il nome -->
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="firstName" />
+                  </mat-form-field>
+                </mat-grid-tile>
+
+                <!-- ... (analoghi campi per cognome, data di nascita e professione) ... -->
+              </mat-grid-list>
+            </mat-expansion-panel>
+
+            <!-- Accordion per i dati di contatto -->
+            <mat-expansion-panel [expanded]="datiContattoOpenState" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>CONTATTI</mat-panel-title>
+              </mat-expansion-panel-header>
+
+              <!-- Griglia per i campi dei dati di contatto -->
+              <mat-grid-list cols="4" rowHeight="100px">
+                <!-- ... (campi per email, numero di telefono mobile e numero di telefono fisso) ... -->
+              </mat-grid-list>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <!-- Pulsante per salvare le modifiche del profilo -->
+          <button
+            class="mt-1"
+            mat-raised-button
+            color="primary"
+            (click)="saveUser()"
+          >
+            {{ userId ? "Modifica" : "Crea" }}
+          </button>
+
+          <!-- Pulsante per eliminare il profilo -->
+          <button
+            *ngIf="userId"
+            class="mt-1 ms-3"
+            mat-raised-button
+            color="warn"
+            (click)="deleteUser()"
+          >
+            Elimina
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,32 @@
+<!-- <ul>
+    <li *ngFor="let user of users">
+        {{ user.firstName | uppercase }}
+        {{ user.lastName | titlecase}} - 
+        <span [ngClass]="user.isLogged ? 'online' : 'offline'">
+            ({{ user.isLogged ? 'ONLINE' : 'OFFLINE'}})
+        </span>
+        <span [statusIndicator]="user.isLogged"></span>
+    </li>
+</ul> -->
+
+<div class="user-container" *ngFor="let user of users">
+  <!-- Contenitore per ciascun utente -->
+  <div class="name-container">
+    <!-- Visualizzazione del nome dell'utente -->
+    {{ user.firstName | uppercase }}
+    {{ user.lastName | titlecase }} -
+    <!-- Indicatore di stato (online/offline) -->
+    <span [statusIndicator]="user.isLogged"></span>
+  </div>
+  <div class="d-flex align-items-center">
+    <!-- Icona per visitare il profilo -->
+    <span
+      class="material-icons md-24 icon"
+      (click)="goToProfile(user.id)"
+      title="Vai al profilo"
+      >face</span
+    >
+    <!-- Avvia la chat con l'utente -->
+    <span (click)="onUserSelected(user.id)">Chatta</span>
+  </div>
+</div>

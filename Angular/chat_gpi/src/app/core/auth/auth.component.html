@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center align-items-center log-select">
+  <!-- selezione -->
+  <div>
+    <!-- Titolo per la selezione dell'utente -->
+    <h4 class="mb-3">Seleziona un utente</h4>
+
+    <!-- Campo di form per la selezione dell'utente -->
+    <mat-form-field>
+      <mat-label>Utente</mat-label>
+      <!-- Menu a discesa per selezionare un utente -->
+      <mat-select [(value)]="selectedId">
+        <!-- Itera tra gli utenti per mostrare le opzioni -->
+        <mat-option *ngFor="let user of users" [value]="user.id">
+          <!-- Mostra il nome e lo stato di accesso dell'utente -->
+          {{ user.firstName }} ({{ user.isLogged }})
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Pulsante di accesso -->
+    <div class="mb-3">
+      <!-- Il pulsante attiva la funzione di accesso con l'ID utente selezionato -->
+      <button (click)="login(selectedId)" mat-button color="primary">
+        Accedi
+      </button>
+    </div>
+
+    <!-- Pulsante per creare un nuovo utente -->
+    <div>
+      <!-- Il pulsante attiva la creazione di un nuovo utente -->
+      <button (click)="create()" mat-button color="accent">
+        Crea nuovo utente
+      </button>
+    </div>
+  </div>
+</div>

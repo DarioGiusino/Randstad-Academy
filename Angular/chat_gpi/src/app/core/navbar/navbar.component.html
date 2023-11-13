@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <!-- Titolo della barra -->
+  <span>ChatGPI</span>
+
+  <!-- Spazio vuoto come separatore -->
+  <span class="spacer"></span>
+
+  <!-- Se 'senderId' è presente, mostra un insieme di opzioni altrimenti mostra un'altra serie di opzioni -->
+  <span *ngIf="senderId; else elseBlock">
+    <!-- Opzioni per utenti autenticati -->
+    <span class="menu-item">
+      <a (click)="goToProfile()">Profilo utente</a>
+    </span>
+    <span class="menu-item">
+      <a routerLink="/chat">Chat</a>
+    </span>
+    <span class="menu-item">
+      <a (click)="resetSession()">Logout</a>
+    </span>
+  </span>
+
+  <!-- Altrimenti, se 'senderId' non è presente, mostra questa serie di opzioni -->
+  <ng-template #elseBlock>
+    <!-- Opzioni per utenti non autenticati -->
+    <span class="menu-item">
+      <a routerLink="/profile">Nuovo profilo</a>
+    </span>
+  </ng-template>
+</mat-toolbar>

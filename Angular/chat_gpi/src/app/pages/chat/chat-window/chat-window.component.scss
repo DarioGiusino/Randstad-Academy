@@ -1,0 +1,13 @@
+/* Contenitore dei messaggi */
+.msg-container {
+  /* Calcola l'altezza in base all'altezza della finestra del browser */
+  height: calc(100vh - 64px - 80px);
+  background-color: darkgray;
+
+  /* Stile della bolla del messaggio */
+  .msg-bubble {
+    background-color: bisque;
+    width: 200px;
+    height: 150px;
+  }
+}

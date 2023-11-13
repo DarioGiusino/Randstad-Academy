@@ -1,0 +1,34 @@
+// Definizione dello stile per indicare lo stato online
+.online {
+  color: green;
+}
+
+// Definizione dello stile per indicare lo stato offline
+.offline {
+  color: red;
+}
+
+// Stile per il contenitore dell'utente
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+
+  // Stile per il contenitore del nome
+  .name-container {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+
+    // Stile al passaggio del mouse sul contenitore del nome
+    &:hover {
+      background-color: bisque;
+    }
+  }
+}
+
+// Stile per le icone
+.icon {
+  cursor: pointer;
+}

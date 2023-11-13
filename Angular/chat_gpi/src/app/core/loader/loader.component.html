@@ -1,0 +1,6 @@
+<div class="overlay" *ngIf="isLoading | async">
+  <!-- Questo div funge da overlay e viene visualizzato solo quando isLoading è true (valorizzato tramite un Observable) -->
+  <mat-progress-spinner class="spinner" mode="indeterminate">
+    <!-- Utilizza il componente di Angular Material per visualizzare un indicatore di caricamento indeterminato -->
+  </mat-progress-spinner>
+</div>

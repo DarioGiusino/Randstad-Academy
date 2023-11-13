@@ -1,0 +1,17 @@
+<div class="container-fluid mt-3">
+  <!-- Griglia con una riga divisa in due colonne -->
+  <div class="row">
+    <!-- Colonna principale con il campo di inserimento del messaggio -->
+    <div class="col-10">
+      <!-- Area di testo per inserire il messaggio -->
+      <textarea placeholder="Inserisci messaggio" [(ngModel)]="msg"></textarea>
+    </div>
+    <!-- Colonna per il pulsante di invio -->
+    <div class="col-2">
+      <!-- Pulsante per inviare il messaggio -->
+      <button mat-raised-button color="primary" (click)="sendMsg()">
+        Invia
+      </button>
+    </div>
+  </div>
+</div>

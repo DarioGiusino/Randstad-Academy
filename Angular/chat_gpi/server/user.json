@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "firstName": "Marco",
+  "lastName": "Perez",
+  "bio": "Lorem Ipsum",
+  "isLogged": true,
+  "photoUrl": "https://via.placeholder.com/150"
+}

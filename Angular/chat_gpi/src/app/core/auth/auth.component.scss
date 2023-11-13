@@ -1,0 +1,9 @@
+/* Imposta l'altezza dell'elemento con classe .log-select in base all'altezza della viewport meno 64px */
+.log-select {
+  height: calc(100vh - 64px);
+
+  /* Applica larghezza del 100% a tutti i pulsanti all'interno di .log-select */
+  button {
+    width: 100%;
+  }
+}
