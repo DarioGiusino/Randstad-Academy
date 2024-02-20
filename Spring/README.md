@@ -106,6 +106,4 @@ Memory Management: The application temporarily stores data in memory without usi
 Additional Endpoints: Endpoints are available that return a sequence of numbers up to a certain number (/sequence/{n}) and operations on tasks.
 
 Usage:
-This project is an educational example demonstrating how to implement a RESTful application using Spring Boot. The use of temporarily stored data in data structures simplifies understanding of how the REST API works without the complexity of a real database. It can serve as a starting point
-
- for understanding CRUD operations and entity management in a RESTful application.
+This project is an educational example demonstrating how to implement a RESTful application using Spring Boot. The use of temporarily stored data in data structures simplifies understanding of how the REST API works without the complexity of a real database. It can serve as a starting point for understanding CRUD operations and entity management in a RESTful application.
