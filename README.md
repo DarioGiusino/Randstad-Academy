@@ -1,17 +1,17 @@
 # Randstad-Academy
 
-Cartella "Java Plain"
+Folder "Java Plain"
 
-La cartella "Java Plain" contiene una serie di progetti Java svolti durante l'esperienza formativa presso Randstad Academy. Questi progetti sono esempi che mostrano l'implementazione di concetti e strutture di base in linguaggio Java. Essi includono applicazioni di base, algoritmi, strutture dati, principi di programmazione e casi di studio, sviluppati senza l'ausilio di framework o librerie esterne.
+The "Java Plain" folder contains a series of Java projects completed during the training experience at Randstad Academy. These projects are examples that demonstrate the implementation of basic concepts and structures in the Java language. They include basic applications, algorithms, data structures, programming principles, and case studies, developed without the use of external frameworks or libraries.
 
-Cartella "Spring"
+Folder "Spring"
 
-La cartella "Spring" contiene progetti sviluppati durante il corso presso Randstad Academy, focalizzati sull'utilizzo del framework Spring. Questi progetti includono applicazioni web e API RESTful costruite utilizzando Spring Boot, che è uno strumento di sviluppo rapido di applicazioni basate su Spring Framework. Gli esempi implementano concetti avanzati come la gestione delle entità, la connessione a database, operazioni CRUD (Create, Read, Update, Delete) e altri aspetti di sviluppo di applicazioni basate su Spring. L'obiettivo principale di questa sezione è offrire una comprensione pratica e applicata di come utilizzare Spring e le sue funzionalità per costruire e gestire applicazioni Java complesse.
+The "Spring" folder contains projects developed during the course at Randstad Academy, focused on the use of the Spring framework. These projects include web applications and RESTful APIs built using Spring Boot, which is a rapid application development tool for Spring Framework-based applications. The examples implement advanced concepts such as entity management, database connection, CRUD operations (Create, Read, Update, Delete), and other aspects of developing Spring-based applications. The main objective of this section is to provide a practical and applied understanding of how to use Spring and its features to build and manage complex Java applications.
 
-Cartella "FinalTest Java-Spring"
+Folder "FinalTest Java-Spring"
 
-La cartella "FinalTest Java-Spring" raccoglie gli ultimi due progetti realizzati al termine del percorso di formazione backend presso Randstad Academy. Questi progetti rappresentano il culmine dell'esperienza formativa, combinando sia concetti di base di programmazione Java (Java Plain) che l'implementazione avanzata utilizzando il framework Spring.
+The "FinalTest Java-Spring" folder gathers the last two projects completed at the end of the backend training path at Randstad Academy. These projects represent the culmination of the training experience, combining both basic Java programming concepts (Java Plain) and advanced implementation using the Spring framework.
 
-Cartella "Angular"
+Folder "Angular"
 
-La cartella "Angular" ospita un progetto front-end sviluppato con il framework Angular. Questo progetto front-end è stato realizzato per applicare concetti avanzati di sviluppo web utilizzando Angular, un framework TypeScript open-source per la creazione di applicazioni client-side. Il contenuto della cartella "Angular" include svariati moduli e componenti che gestiscono diversi aspetti dell'applicazione, come la navigazione tra le pagine, la gestione dell'interfaccia utente, le richieste HTTP ai server di backend, la validazione dei dati e altro ancora. Questo progetto dimostra l'implementazione pratica e applicata di Angular per la realizzazione di interfacce utente sofisticate e dinamiche per applicazioni web.
+The "Angular" folder hosts a front-end project developed with the Angular framework. This front-end project was created to apply advanced web development concepts using Angular, an open-source TypeScript framework for building client-side applications. The content of the "Angular" folder includes various modules and components that handle different aspects of the application, such as page navigation, user interface management, HTTP requests to backend servers, data validation, and more. This project demonstrates the practical and applied implementation of Angular for creating sophisticated and dynamic user interfaces for web applications.
