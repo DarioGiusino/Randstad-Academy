@@ -1,131 +1,133 @@
 # BookOnline
-Questo progetto, realizzato in gruppo da due persone, rappresenta un'applicazione Java per un negozio di libri online. L'obiettivo principale è offrire agli utenti la possibilità di registrarsi, navigare nel catalogo di libri, acquistarli e condividere recensioni.
+This project, developed in a team of two people, represents a Java application for an online book store. The main goal is to provide users with the ability to register, browse the book catalog, make purchases, and share reviews.
 
-Funzionalità principali:
-Gestione Utenti: Gli utenti possono registrarsi, accedere alla libreria e visualizzare il catalogo di libri.
-Catalogo di Libri: I libri sono gestiti in un catalogo con informazioni come titolo, autore, genere e prezzo.
-Recensioni: Gli utenti possono scrivere recensioni sui libri acquistati, valutandoli da 1 a 5 stelle.
-Acquisto di Libri: Gli utenti possono acquistare libri e visualizzare i libri acquistati.
-Raccomandazioni: Viene fornita una lista di libri consigliati in base ai generi preferiti dell'utente e alle recensioni positive.
-Libri Popolari: Viene mostrata una lista dei libri più popolari basati sulle recensioni.
+Main Features:
+User Management: Users can register, log in to the library, and view the book catalog.
+Book Catalog: Books are managed in a catalog with information such as title, author, genre, and price.
+Reviews: Users can write reviews on purchased books, rating them from 1 to 5 stars.
+Book Purchase: Users can purchase books and view purchased books.
+Recommendations: A list of recommended books is provided based on the user's preferred genres and positive reviews.
+Popular Books: A list of the most popular books is shown based on reviews.
 
 # BookShop
-Questo codice rappresenta un simulatore di un negozio online di libri realizzato in Java. La classe Shop gestisce le interazioni degli utenti, consentendo loro di operare sia come "guest" che come "admin". Gli utenti "guest" possono acquistare libri, visualizzare la propria lista e accedere come "admin" tramite una password. Gli utenti "admin" hanno accesso a funzionalità avanzate come l'aggiunta, la rimozione e la modifica dei libri nel catalogo.
+This code represents a simulator of an online book store developed in Java. The Shop class manages user interactions, allowing them to operate as both "guests" and "admins". "Guest" users can purchase books, view their list, and access as "admins" via a password. "Admin" users have access to advanced features such as adding, removing, and modifying books in the catalog.
 
-Caratteristiche Principali:
-Ruoli Utente: Gestisce le azioni specifiche per gli utenti "guest" e "admin".
-Menu Interattivi: Fornisce un'interfaccia testuale per l'utente, permettendo di scegliere azioni come l'acquisto, la visualizzazione dei libri e la gestione del catalogo.
-Gestione delle Operazioni: Le funzioni di acquisto, visualizzazione e gestione dei libri sono implementate in modo modulare.
+Key Features:
+User Roles: Manages specific actions for "guest" and "admin" users.
+Interactive Menus: Provides a text-based interface for the user, allowing them to choose actions such as purchasing, viewing books, and managing the catalog.
+Operation Management: Purchase, view, and book management functions are implemented modularly.
 
-Utilizzo di Variabili Statiche:
-Utilizza variabili statiche per gestire lo stato dell'applicazione, inclusa la lista dei libri, lo stato degli utenti e i menu.
-Questa implementazione fornisce un'interfaccia di base per gli utenti, consentendo loro di interagire con un negozio di libri simulato. Le funzioni principali sono modulari e suddivise in metodi dedicati, facilitando l'estensione e la manutenzione del codice.
+Use of Static Variables:
+Uses static variables to manage the application state, including the list of books, user status, and menus.
+This implementation provides a basic interface for users to interact with a simulated book store. The main functions are modular and divided into dedicated methods, facilitating code extension and maintenance.
 
 # CarManager
-Il codice presenta una gestione di un database di automobili attraverso l'interfaccia utente e la manipolazione di oggetti Car. È stato sviluppato utilizzando Java, interagendo con un database MySQL.
+The code presents management of a car database through the user interface and manipulation of Car objects. It was developed using Java, interacting with a MySQL database.
 
-Classi Principali:
+Main Classes:
 CarManager:
-Questa classe gestisce le operazioni sulle automobili, come l'aggiunta, la modifica, l'eliminazione e la visualizzazione.
-È possibile anche cercare un'auto tramite la targa.
-Utilizza metodi per sincronizzare i dati con il database e gestire l'interazione con esso.
-Viene utilizzata la classe Utilities per l'input utente.
+This class manages operations on cars, such as adding, modifying, deleting, and displaying.
+It is also possible to search for a car by license plate.
+It uses methods to synchronize data with the database and manage interaction with it.
+The Utilities class is used for user input.
 
 ConnectionUtils:
-Gestisce la connessione al database e le operazioni come l'ottenimento di ResultSet, la visualizzazione dei risultati, ecc.
-Utilizza la connessione JDBC per connettersi al database MySQL.
+Manages the connection to the database and operations such as obtaining ResultSet, displaying results, etc.
+Uses JDBC connection to connect to the MySQL database.
 
 Utilities:
-Classe di utilità che fornisce un metodo per l'input dell'utente.
+Utility class that provides a method for user input.
 
-Punti Salienti:
-Operazioni CRUD: La classe CarManager consente di effettuare operazioni CRUD sul database di automobili.
-Interazione con il Database: La classe ConnectionUtils gestisce la connessione al database e le operazioni su di esso, come l'esecuzione di query e il recupero dei dati.
-Input Utente Sicuro: La classe Utilities fornisce un metodo per ottenere l'input dell'utente in modo sicuro, validando e convertendo i tipi.
-Il codice è strutturato in modo da separare le responsabilità, facilitando la gestione e la manutenzione. Sono presenti gestione delle eccezioni e commenti per guidare la comprensione del codice.
+Highlights:
+CRUD Operations: The CarManager class allows performing CRUD operations on the car database.
+Database Interaction: The ConnectionUtils class manages the connection to the database and operations on it, such as executing queries and retrieving data.
+Secure User Input: The Utilities class provides a method for obtaining user input safely, validating and converting types.
+The code is structured to separate responsibilities, facilitating management and maintenance. Exception handling and comments are present to guide code understanding.
 
-Inoltre, il codice gestisce il formato delle date per l'inserimento e l'aggiornamento dei dati nel database.
+Additionally, the code handles date formatting for data insertion and updating in the database.
 
-# Esercizio Finale in Java Plain
-Esercizio finale in Java plain, descritto nel ReadMe all'interno.
+# Final Exercise in Plain Java
+Final exercise in plain Java, as described in the ReadMe inside.
 
 # Restaurant Manager
-Il repository offre una soluzione di gestione delle prenotazioni per tavoli in un ristorante. La classe PrenotazioneServiceImpl fornisce metodi per prenotare un tavolo, annullare una prenotazione e visualizzare i tavoli disponibili.
+The repository offers a reservation management solution for tables in a restaurant. The PrenotazioneServiceImpl class provides methods to reserve a table, cancel a reservation, and view available tables.
 
-Funzionalità Principali
-Prenota un Tavolo: L'utente può prenotare un tavolo specificando il numero di persone, la data e l'orario desiderati.
-Annulla Prenotazione: Permette di annullare una prenotazione esistente selezionando la riga corrispondente.
-Visualizza Tavoli Disponibili: Fornisce un elenco dei tavoli attualmente disponibili per la prenotazione.
+Main Features
+Book a Table: Users can book a table by specifying the number of people, date, and desired time.
+Cancel Reservation: Allows canceling an existing reservation by selecting the corresponding row.
+View Available Tables: Provides a list of currently available tables for booking.
 
-Struttura del Codice
-Il codice è strutturato come un servizio, con l'obiettivo di gestire in modo efficace le interazioni utente attraverso un'implementazione di metodi intuitivi.
+Code Structure
+The code is structured as a service, aiming to efficiently manage user interactions through an implementation of intuitive methods.
 
-Database: Utilizzo di JDBC per l'interazione con un database MySQL.
-Gestione Utente: Interazione utente tramite input da console.
-Il codice utilizza pattern di programmazione ad oggetti, l'accesso a database relazionali e la gestione di eccezioni per garantire un funzionamento affidabile.
+Database: Use of JDBC for interaction with a MySQL database.
+User Management: User interaction via console input.
+The code uses object-oriented programming patterns, access to relational databases, and exception handling to ensure reliable operation.
 
 # ShopJDBC
-Il repository fornisce un'applicazione di gestione di un negozio che permette agli utenti di visualizzare il catalogo, gestire il carrello degli acquisti e accedere a funzionalità amministrative tramite una "ADMIN DASHBOARD". Questa struttura adotta i concetti di DAO (Data Access Object) e utilizza classi DTO (Data Transfer Object) per separare la logica di business dall'accesso ai dati.
+The repository provides a shop management application that allows users to view the catalog, manage the shopping cart, and access administrative functionalities through an "ADMIN DASHBOARD". This structure adopts the concepts of DAO (Data Access Object) and uses DTO (Data Transfer Object) classes to separate business logic from data access.
 
-Classi Implementate
-ProdottoDAO.java: Questa classe gestisce l'accesso ai dati dei prodotti del negozio. Offre metodi per le operazioni di base, come l'inserimento, la modifica, l'eliminazione e il recupero dei prodotti dal database.
+Implemented Classes
+ProductDAO.java: This class handles access to store product data. It provides methods for basic operations, such as insertion, modification, deletion, and retrieval of products from the database.
 
-ClienteDAO.java: Analogamente a ProdottoDAO, questa classe si occupa dell'accesso ai dati dei clienti, fornendo funzionalità simili per l'interazione con la tabella dei clienti.
+ClienteDAO.java: Similar to ProductDAO, this class handles access to customer data, providing similar functionality for interaction with the customer table.
 
-OrdineDAO.java: Gestisce l'accesso ai dati degli ordini effettuati, offrendo i metodi necessari per gestire le informazioni sugli ordini nel database.
+OrdineDAO.java: Manages access to order data, providing the necessary methods to handle order information in the database.
 
-DTO Classi (es. ProdottoDTO, ClienteDTO, OrdineDTO): Queste classi contengono attributi e metodi per trasferire dati tra la logica dell'applicazione e il database. Ogni classe DTO rappresenta una tabella del database e definisce le strutture dati necessarie per il trasferimento dei dati.
+DTO Classes (e.g., ProductDTO, ClienteDTO, OrdineDTO): These classes contain attributes and methods for transferring data between the application logic and the database. Each DTO class represents a database table and defines the data structures needed for data transfer.
 
-Flusso dell'Applicazione
-Guest:
-Possono visualizzare il catalogo dei prodotti e aggiungere articoli al carrello.
-Possono accedere alla "ADMIN DASHBOARD" inserendo una password specifica.
+Application Flow
+Guests:
+They can view the product catalog and add items to the shopping cart.
+They can access the "ADMIN DASHBOARD" by entering a specific password.
 
-Admin:
-Hanno accesso alla "ADMIN DASHBOARD" per gestire prodotti, clienti e ordini.
-Utilizzo di DAO e DTO
+Admins:
+They have access to the "ADMIN DASHBOARD" to manage products, customers, and orders.
+Use of DAO and DTO
 
-L'utilizzo di DAO permette di separare la logica di business dall'accesso ai dati, migliorando la struttura del codice e rendendo più chiare le operazioni svolte sul database. I DTO fungono da interfacce tra le classi di accesso ai dati e la logica dell'applicazione, garantendo un trasferimento efficiente e consistente dei dati.
+The use of DAO allows separating business logic from data access, improving code structure, and making operations performed on the database clearer. DTOs act as interfaces between data access classes and application logic, ensuring efficient and consistent data transfer.
 
-La struttura DAO-DTO adottata favorisce la modularità del codice, semplificando la manutenzione e l'estensione del sistema nel tempo.
+The DAO-DTO structure adopted promotes code modularity, simplifying system maintenance and extension over time.
 
-# StazioneMeteo
-Il codice fornito rappresenta un'applicazione semplificata di monitoraggio meteorologico che simula una stazione meteo. Utilizza il pattern Observer per notificare i vari osservatori (come operatori e veicoli) quando ci sono aggiornamenti relativi alle condizioni meteorologiche di diverse regioni.
+# WeatherStation
+The provided code represents a simplified weather monitoring application that simulates a weather station. It uses the Observer pattern to notify various observers (such as operators and vehicles) when there are updates regarding weather conditions in different regions.
 
-Descrizione del Codice:
-MeteoInfo: Rappresenta le informazioni meteorologiche relative a temperatura, velocità del vento, data dell'ultimo aggiornamento e la regione associata.
+Code Description:
+MeteoInfo: Represents meteorological information related to temperature, wind speed, last update date, and associated region.
 
-Operatore e Veicolo: Implementano l'interfaccia Osservatore per ricevere gli aggiornamenti meteorologici dalla stazione meteo. Gli operatori mostrano solo informazioni sulla temperatura, mentre i veicoli mostrano la data dell'ultimo aggiornamento del meteo.
+Operator and Vehicle: Implement the Observer interface to receive meteorological updates from the weather station. Operators show only temperature information, while vehicles show the last weather update date.
 
-StazioneMeteo: Mantiene una lista di osservatori e aggiorna tutti gli osservatori registrati quando riceve nuove informazioni meteorologiche. Ogni osservatore interessato riceve i dati e aggiorna le informazioni di interesse.
+Weather Station: Maintains a list of observers and updates all registered observers when it receives new meteorological information. Each interested observer receives the data and updates relevant information.
 
-Regione: Enumerazione delle regioni supportate per l'osservazione delle condizioni meteorologiche.
+Region: Enumeration of supported regions for observing weather conditions.
 
-Utilizzo:
-La classe principale Main inizializza la stazione meteo e diversi osservatori (operatori e veicoli) per monitorare le condizioni meteo.
-Aggiunge gli osservatori alla stazione meteo.
-La stazione meteo riceve informazioni meteorologiche tramite il metodo aggiornaMeteo, e successivamente notifica gli osservatori registrati.
-Pattern di Progettazione:
-Il codice utilizza il design pattern Observer, consentendo alla stazione meteo di notificare automaticamente gli osservatori interessati quando ci sono aggiornamenti meteorologici.
+Usage:
+The Main class initializes the weather station and various observers (operators and vehicles) to monitor weather conditions.
+Adds observers to the weather station.
+The weather station receives meteorological information via the updateWeather method and subsequently notifies registered observers.
+Design Pattern:
+The code uses the Observer design pattern, allowing the weather station to automatically notify interested observers when there are meteorological updates.
 
-Questo esempio può essere utilizzato come base per comprendere il funzionamento del pattern Observer e come implementare la comunicazione asincrona tra oggetti, utile in contesti di notifiche e aggiornamenti distribuiti.
+This example can be used as a basis for understanding how the Observer pattern works and how to implement asynchronous communication between objects, useful in notification and distributed update contexts.
 
 # TestJDBC
-Il codice fornito rappresenta un'applicazione Java che interagisce con un database MySQL chiamato negozio_db, effettuando operazioni di interrogazione (SELECT) e chiusura della connessione. Inoltre, contiene un esempio di utilizzo delle classi ConnectionUtils e Main per gestire la connessione al database e visualizzare i risultati delle query.
+The provided code represents a Java application that interacts with a MySQL database called negozio_db, performing query operations (SELECT) and closing the connection. Additionally, it contains an example of using the ConnectionUtils and Main classes to handle database connection and display query results.
 
-Struttura e Funzionalità:
-Main: Presenta un esempio di utilizzo della classe ConnectionUtils, eseguendo una query SQL per recuperare e visualizzare il catalogo dei prodotti dal database negozio_db.
+Structure and Functionality:
+Main: Presents an example of using the ConnectionUtils class, executing an SQL query to retrieve and display the product catalog from the negozio_db database.
 
-ConnectionUtils: Contiene metodi per gestire la connessione al database MySQL (negozio_db), eseguire query, ottenere e stampare i risultati ottenuti.
+ConnectionUtils: Contains methods to handle the connection to the MySQL database (negozio_db), execute queries, obtain and print the results obtained.
 
-Descrizione Funzionale:
-Il metodo Main inizializza un'istanza di ConnectionUtils passando le credenziali e il nome del database. Successivamente esegue una query SQL che recupera i dati dalla tabella "prodotto" e li stampa a console.
-Il metodo ConnectionUtils gestisce la connessione al database, riceve e stampa i risultati delle query eseguite.
+Functional Description:
+The Main method initializes an instance of ConnectionUtils passing credentials and the database name. Subsequently, it executes an
 
-Utilizzo:
-L'esempio mostrato illustra come stabilire una connessione a un database MySQL, eseguire query e ottenere i risultati. Sostituendo le query all'interno del metodo main della classe Main, è possibile effettuare diverse interrogazioni e visualizzare i risultati.
+ SQL query that retrieves data from the "product" table and prints it to the console.
+The ConnectionUtils method handles the connection to the database, receives and prints the results of the executed queries.
 
-Note:
-L'esempio si concentra principalmente sull'esecuzione di query di selezione (SELECT) e sulla visualizzazione dei risultati restituiti.
+Usage:
+The shown example illustrates how to establish a connection to a MySQL database, execute queries, and obtain results. By replacing the queries inside the main method of the Main class, different queries can be executed and results displayed.
 
-Questo esempio può essere utilizzato come guida per l'interazione con un database MySQL da un'applicazione Java, fornendo un'introduzione semplice e pratica all'accesso e all'utilizzo dei dati memorizzati in un database relazionale.
+Notes:
+The example mainly focuses on executing selection queries (SELECT) and displaying the returned results.
+
+This example can be used as a guide for interacting with a MySQL database from a Java application, providing a simple and practical introduction to accessing and using data stored in a relational database.
