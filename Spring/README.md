@@ -1,108 +1,111 @@
-# Biblioteca
-Il codice fornito è un'applicazione Spring che gestisce una biblioteca, consentendo la gestione dei libri, dei membri e delle prenotazioni. L'applicazione è strutturata in modo tale da gestire operazioni CRUD (Create, Read, Update, Delete) su libri, membri e prenotazioni.
+# Library
+The provided code is a Spring application that manages a library, allowing the management of books, members, and reservations. The application is structured to handle CRUD (Create, Read, Update, Delete) operations on books, members, and reservations.
 
-Struttura del Codice:
+Code Structure:
 Package com.biblioteca
-BibliotecaApplication: Punto di ingresso dell'applicazione Spring Boot.
+BibliotecaApplication: Entry point of the Spring Boot application.
 
 Package com.biblioteca.controller
-LibroController: Contiene metodi che consentono di eseguire operazioni su entità Libro, inclusi l'aggiunta, la visualizzazione, l'aggiornamento e la rimozione dei libri, nonché la ricerca di libri per genere e autore.
+LibroController: Contains methods to perform operations on the Libro entity, including adding, viewing, updating, and removing books, as well as searching for books by genre and author.
 
 Package com.biblioteca.entity
-Libro: Rappresenta l'entità "Libro" con attributi come ID, titolo, autore, genere, anno di pubblicazione e quantità disponibile.
-Membro: Simile alla struttura dell'entità Libro, rappresenta un membro della biblioteca con attributi come ID, nome, email e ruolo.
-Prenotazione: Rappresenta l'entità di una prenotazione nella biblioteca, contenente dettagli come ID prenotazione, ID membro, ID libro prenotato, data di prenotazione e stato della prenotazione.
+Libro: Represents the "Book" entity with attributes such as ID, title, author, genre, publication year, and available quantity.
+Membro: Similar to the structure of the Libro entity, represents a library member with attributes like ID, name, email, and role.
+Prenotazione: Represents the entity of a reservation in the library, containing details such as reservation ID, member ID, booked book ID, reservation date, and reservation status.
 
 Package com.biblioteca.repo
-LibroRepo: Simula un repository di dati per l'entità Libro usando una mappa in memoria. Gestisce l'aggiunta, la lettura, l'aggiornamento e la rimozione dei libri.
-MembroRepo: Simula un repository di dati per l'entità Membro usando una mappa in memoria. Gestisce l'aggiunta, la lettura, l'aggiornamento e la rimozione dei membri.
-PrenotazioneRepo: Simula un repository di dati per l'entità Prenotazione usando una mappa in memoria. Gestisce l'aggiunta, la lettura, l'aggiornamento e la rimozione delle prenotazioni.
+LibroRepo: Simulates a data repository for the Libro entity using an in-memory map. It manages adding, reading, updating, and removing books.
+MembroRepo: Simulates a data repository for the Membro entity using an in-memory map. It manages adding, reading, updating, and removing members.
+PrenotazioneRepo: Simulates a data repository for the Prenotazione entity using an in-memory map. It manages adding, reading, updating, and removing reservations.
 
 Package com.biblioteca.serv
-LibroServ: Implementa i servizi relativi ai libri, offrendo operazioni per aggiungere, visualizzare, aggiornare, eliminare e cercare libri in base a genere e/o autore.
-MembroServ: Implementa i servizi relativi ai membri, offrendo operazioni per aggiungere, visualizzare, aggiornare, eliminare membri e gestire le prenotazioni associate.
-PrenotazioneServ: Implementa i servizi relativi alle prenotazioni, offrendo operazioni per aggiungere, visualizzare, aggiornare, eliminare prenotazioni e gestire lo stato delle prenotazioni.
+LibroServ: Implements services related to books, offering operations to add, view, update, delete, and search for books based on genre and/or author.
+MembroServ: Implements services related to members, offering operations to add, view, update, delete members, and manage associated reservations.
+PrenotazioneServ: Implements services related to reservations, offering operations to add, view, update, delete reservations, and manage reservation status.
 
-Funzionalità:
-I controllori LibroController, MembroController, e PrenotazioneController espongono endpoint REST per operazioni CRUD su libri, membri e prenotazioni rispettivamente.
-I servizi LibroServ, MembroServ e PrenotazioneServ gestiscono la logica aziendale relativa alle entità, interfacciandosi con i rispettivi repository (LibroRepo, MembroRepo, PrenotazioneRepo).
-Le classi Libro, Membro e Prenotazione rappresentano le entità all'interno del sistema.
+Features:
+LibroController, MembroController, and PrenotazioneController expose REST endpoints for CRUD operations on books, members, and reservations respectively.
+LibroServ, MembroServ, and PrenotazioneServ services handle business logic related to entities, interfacing with their respective repositories (LibroRepo, MembroRepo, PrenotazioneRepo).
+The Libro, Membro, and Prenotazione classes represent the entities within the system.
 
-Punti Salienti:
-Utilizzo di Spring Boot per l'avvio e l'esecuzione dell'applicazione.
-Utilizzo di annotazioni (@RestController, @Service, @Repository, @Autowired) per la gestione dei componenti Spring.
-I dati sono simulati in memoria tramite una mappa, tuttavia, sarebbe possibile integrare un database reale.
-Le operazioni principali (aggiunta, lettura, aggiornamento e rimozione) sono implementate per le entità Libro, Membro e Prenotazione.
+Highlights:
+Usage of Spring Boot for application startup and execution.
+Usage of annotations (@RestController, @Service, @Repository, @Autowired) for Spring component management.
+Data is simulated in memory using a map, however, it would be possible to integrate a real database.
+Primary operations (addition, reading, updating, and deletion) are implemented for Libro, Membro, and Prenotazione entities.
 
-Utilizzo:
-Questo codice può essere usato come base per la creazione di un'applicazione di gestione di una biblioteca, fornendo operazioni di base su libri, membri e prenotazioni.
+Usage:
+This code can be used as a basis for creating a library management application, providing basic operations on books, members, and reservations.
 
 # H2Biblioteca
-L'applicazione "Biblioteca" è un'applicazione Spring Boot che consente di gestire libri e membri. L'applicazione integra un database H2 in memoria per la persistenza dei dati relativi ai libri e ai membri.
+The "Biblioteca" application is a Spring Boot application that allows managing books and members. The application integrates an in-memory H2 database for persistence of data related to books and members.
 
-Struttura del Codice:
+Code Structure:
 Package com.example
 
-Caratteristiche Principali:
-Spring Boot con Database H2: L'applicazione è costruita su Spring Boot e utilizza un database H2 in memoria per la gestione dei libri e dei membri.
+Key Features:
+Spring Boot with H2 Database: The application is built on Spring Boot and utilizes an in-memory H2 database for managing books and members.
 
-Entità Libro e Membro: Sono presenti due entità principali, ovvero Libro e Membro. Ogni entità include funzionalità di base, come aggiunta, visualizzazione, aggiornamento ed eliminazione, implementate nei repository LibroRepo e MembroRepo.
+Libro and Membro Entities: There are two main entities, Libro and Membro. Each entity includes basic functionalities such as addition, viewing, updating, and deletion, implemented in LibroRepo and MembroRepo repositories.
 
-Servizi e Controller: I servizi LibroServ e MembroServ gestiscono le operazioni logiche relative ai libri e ai membri, interfacciandosi con i rispettivi repository. I controller LibroController e MembroController offrono API RESTful per eseguire operazioni CRUD su libri e membri.
+Services and Controllers: LibroServ and MembroServ services handle logical operations related to books and members, interfacing with their respective repositories. LibroController and MembroController offer RESTful APIs to perform CRUD operations on books and members.
 
-Connessione al Database H2: L'applicazione si connette a un database H2 in memoria per l'archiviazione dei dati.
+Connection to H2 Database: The application connects to an in-memory H2 database for data storage.
 
-Operazioni Base: L'applicazione supporta operazioni standard per le entità, quali aggiunta, visualizzazione, aggiornamento ed eliminazione.
+Basic Operations: The application supports standard operations for entities, such as addition, viewing, updating, and deletion.
 
-Punti di Forza:
-Facilità d'Uso: Sfruttando le funzionalità di Spring Boot, l'applicazione è configurata in modo semplice e veloce.
-Persistenza dei Dati: Utilizzando il database H2 in memoria, l'applicazione gestisce la persistenza dei dati in modo efficiente.
-Gestione delle Entità: Ogni entità ha un insieme di operazioni definite per gestire i dati in modo efficace.
-Utilizzo:
-Questo progetto costituisce una base solida per la creazione di un'applicazione di gestione di libri e membri.
+Strengths:
+Ease of Use: Leveraging Spring Boot features, the application is configured simply and quickly.
+Data Persistence: Using the in-memory H2 database, the application manages data persistence efficiently.
+Entity Management: Each entity has a set of operations defined to manage data effectively.
+
+Usage:
+This project serves as a solid foundation for creating a book and member management application.
 
 # H2Demo
-L'applicazione "H2Demo" è un progetto Spring che utilizza per la persistenza dei dati un database H2 in memoria. L'applicazione consente di gestire un'entità Saluto.
+The "H2Demo" application is a Spring project that uses an in-memory H2 database for data persistence. The application allows managing a Greeting entity.
 
-Caratteristiche Principali:
-Spring Boot con Hibernate e H2: L'applicazione sfrutta Spring Boot e Hibernate, offrendo una configurazione per l'accesso e la gestione dei dati tramite un database H2 in memoria.
+Key Features:
+Spring Boot with Hibernate and H2: The application leverages Spring Boot and Hibernate, providing configuration for accessing and managing data through an in-memory H2 database.
 
-Entità Saluto: L'entità Saluto è una semplice entità gestita dal framework Hibernate. La classe Saluto è mappata come un'entità tramite le annotazioni di Hibernate (@Entity, @Id, @GeneratedValue) e contiene un campo per il messaggio.
+Greeting Entity: The Greeting entity is a simple entity managed by the Hibernate framework. The Greeting class is mapped as an entity using Hibernate annotations (@Entity, @Id, @GeneratedValue) and contains a field for the message.
 
-Repository e Service: Il repository SalutoRepo estende JpaRepository per interagire con l'entità Saluto, mentre il service SalutoService gestisce la logica aziendale associata alla gestione dei saluti.
+Repository and Service: The SalutoRepo repository extends JpaRepository to interact with the Greeting entity, while the SalutoService service handles the business logic associated with greeting management.
 
-Controller REST: Il SalutoController è un controller REST che definisce un endpoint GET /saluto, accettando un parametro messaggio e salvando un nuovo saluto attraverso il servizio SalutoService.
+REST Controller: The SalutoController is a REST controller that defines a GET /saluto endpoint, accepting a message parameter and saving a new greeting through the SalutoService service.
 
-Configurazione del Database H2: Nel file di configurazione application.properties, sono specificate le impostazioni del database H2, come l'URL, il driver, l'utente, e la password, oltre a impostazioni di Hibernate per la creazione e l'aggiornamento automatico dello schema (ddl-auto=update).
+H2 Database Configuration: In the application.properties configuration file, settings for the H2 database are specified, such as URL, driver, user, and password, along with Hibernate settings for automatic schema creation and updating (ddl-auto=update).
 
-Punti di Forza:
-Semplicità e Chiarezza: L'applicazione offre un esempio semplice ma completo su come configurare e utilizzare Hibernate con un database H2, mostrando la gestione di un'entità tramite repository, service, e controller.
+Strengths:
+Simplicity and Clarity: The application provides a simple yet comprehensive example of how to configure and use Hibernate with an H2 database, demonstrating entity management through repositories, services, and controllers.
 
-Rapidità di Avvio: Grazie a Spring Boot, l'applicazione può essere avviata rapidamente senza richiedere configurazioni complesse.
+Quick Startup: Thanks to Spring Boot, the application can be started quickly without requiring complex configurations.
 
-Utilizzo:
-Questo progetto rappresenta un esempio di base per implementare Hibernate con un database H2 in un'applicazione Spring Boot. Può essere utilizzato come punto di partenza per applicazioni più complesse che coinvolgono persistenza dei dati e gestione di più entità.
+Usage:
+This project serves as a basic example for implementing Hibernate with an H2 database in a Spring Boot application. It can be used as a starting point for more complex applications involving data persistence and management of multiple entities.
 
 # SpringDemoREST
-Questa applicazione è un sistema REST che gestisce diverse entità, comprese prenotazioni, biglietti e task.
+This application is a REST system that manages various entities, including reservations, tickets, and tasks.
 
-Caratteristiche Principali:
-Gestione delle Prenotazioni: L'entità Appointment viene gestita da un controller AppointmentController che permette di ottenere, aggiungere, aggiornare e cancellare prenotazioni.
+Key Features:
+Reservation Management: The Appointment entity is managed by an AppointmentController, allowing retrieval, addition, updating, and deletion of reservations.
 
-Gestione dei Biglietti: L'entità Ticket è gestita tramite un TicketController, che gestisce l'aggiunta, l'aggiornamento, la cancellazione e il recupero dei biglietti, con controlli sulla creazione per i valori negativi.
+Ticket Management: The Ticket entity is managed through a TicketController, which handles addition, updating, deletion, and retrieval of tickets, with checks on creation for negative values.
 
-Gestione dei Libri: L'entità Book è gestita tramite un BookController, consentendo di accedere, aggiungere, aggiornare e cancellare libri.
+Book Management: The Book entity is managed through a BookController, allowing access, addition, updating, and deletion of books.
 
-Gestione dei Task: È presente un TaskController per aggiungere, recuperare e cancellare task.
+Task Management: There is a TaskController for adding, retrieving, and deleting tasks.
 
-Gestione dei Dottori: L'entità Doctor è gestita da un DoctorController che offre funzionalità simili alle prenotazioni e ai libri.
+Doctor Management: The Doctor entity is managed by a DoctorController, offering functionalities similar to reservations and books.
 
-Altre Caratteristiche:
-Operazioni CRUD: Ogni entità ha funzionalità di lettura, scrittura, aggiornamento e cancellazione (CRUD) implementate in controller e servizi corrispondenti.
+Additional Features:
+CRUD Operations: Each entity has functionalities for reading, writing, updating, and deleting (CRUD) implemented in corresponding controllers and services.
 
-Gestione Memoria: L'applicazione memorizza temporaneamente i dati in memoria senza l'utilizzo di un database persistente.
+Memory Management: The application temporarily stores data in memory without using a persistent database.
 
-Altri Endpoint: Sono presenti endpoint che restituiscono una sequenza di numeri fino a un certo numero (/sequence/{n}) e operazioni su task.
+Additional Endpoints: Endpoints are available that return a sequence of numbers up to a certain number (/sequence/{n}) and operations on tasks.
 
-Utilizzo:
-Questo progetto è un esempio didattico che dimostra come implementare un'applicazione RESTful usando Spring Boot. L'uso di dati memorizzati temporaneamente in strutture dati semplifica la comprensione del funzionamento della REST API senza la complessità di un database reale. Può essere un punto di partenza per comprendere le operazioni CRUD e la gestione delle entità in un'applicazione RESTful.
+Usage:
+This project is an educational example demonstrating how to implement a RESTful application using Spring Boot. The use of temporarily stored data in data structures simplifies understanding of how the REST API works without the complexity of a real database. It can serve as a starting point
+
+ for understanding CRUD operations and entity management in a RESTful application.
