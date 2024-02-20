@@ -1,40 +1,39 @@
 # FinalTest-Java
 
-L'applicazione rappresenta un sistema di gestione per un negozio di giocattoli, sviluppato in linguaggio Java. Consiste in diverse classi e utility per gestire un inventario di giocattoli, le vendite effettuate e le interazioni con i clienti.
+The application represents a management system for a toy store, developed in the Java language. It consists of several classes and utilities to manage an inventory of toys, sales, and interactions with customers.
 
-Le principali funzionalità includono:
+The main features include:
 
-Classi Entità: Le classi "Cliente" e "Giocattolo" rappresentano rispettivamente i clienti del negozio e i giocattoli disponibili per la vendita. Ogni entità è caratterizzata da attributi e metodi per ottenere e impostare informazioni specifiche.
+Entity Classes: The "Customer" and "Toy" classes represent the store's customers and the toys available for sale, respectively. Each entity is characterized by attributes and methods to get and set specific information.
 
-Classe "Inventario": Gestisce l'elenco dei giocattoli disponibili nel negozio, fornendo funzionalità per visualizzare l'inventario e aggiungere nuovi giocattoli.
+"Inventory" Class: Manages the list of toys available in the store, providing functionality to view the inventory and add new toys.
 
-Classe "Menu": Interfaccia utente per il negozio, consentendo sia agli utenti (come i clienti) che agli amministratori di interagire con il sistema. Gli utenti possono effettuare acquisti, mentre gli amministratori possono gestire l'inventario, visualizzare le vendite e aggiungere nuovi giocattoli.
+"Menu" Class: User interface for the store, allowing both users (such as customers) and administrators to interact with the system. Users can make purchases, while administrators can manage the inventory, view sales, and add new toys.
 
-Classi di Utilità: La classe "Utilities" offre funzionalità di input da parte dell'utente, supportando vari tipi di input come Integer, Double, String, Float, Long.
+Utility Classes: The "Utilities" class offers user input functionality, supporting various input types such as Integer, Double, String, Float, Long.
 
-Classe "Vendita" e astratta "RegistroVendite": Gestiscono la registrazione delle vendite dei giocattoli da parte dei clienti e la visualizzazione delle vendite stesse.
+"Sale" Class and abstract "SalesRegister": Handle the recording of toy sales by customers and the display of sales themselves.
 
-L'applicazione, sviluppata come parte di un percorso formativo presso Randstad Academy, dimostra l'utilizzo dei concetti fondamentali di programmazione in Java per gestire un sistema di gestione di un negozio di giocattoli. Le classi e le interfacce sono progettate per offrire una solida base concettuale e pratica nella gestione di inventari, vendite e interazioni con i clienti.
-
+The application, developed as part of a training program at Randstad Academy, demonstrates the use of fundamental Java programming concepts to manage a toy store management system. The classes and interfaces are designed to provide a solid conceptual and practical foundation in inventory management, sales, and customer interactions.
 
 # FinalTest-Spring
 
-L'applicazione in questione è un progetto Spring Boot che gestisce un sistema di gestione di ordini, clienti e prodotti attraverso una serie di endpoint REST.
+The application in question is a Spring Boot project that manages an order management system, customers, and products through a series of REST endpoints.
 
-Struttura del progetto:
+Project Structure:
 
-Il progetto è diviso in package che comprendono classi per entità, repository, servizi e controller.
-Le entità includono: Cliente, Ordine e Prodotto, ciascuna con le proprie proprietà e relazioni definite attraverso annotazioni JPA.
-I repository estendono JpaRepository e permettono l'interazione con il database per le operazioni CRUD relative alle entità.
-I servizi forniscono logica di business e gestiscono le operazioni sulle entità.
-I controller forniscono i punti di accesso REST per le operazioni CRUD sulle entità.
-Funzionalità:
+The project is divided into packages that include classes for entities, repositories, services, and controllers.
+Entities include: Customer, Order, and Product, each with their own properties and relationships defined through JPA annotations.
+Repositories extend JpaRepository and allow interaction with the database for CRUD operations related to entities.
+Services provide business logic and manage operations on entities.
+Controllers provide REST access points for CRUD operations on entities.
+Features:
 
-Cliente: Gli endpoint consentono di recuperare tutti i clienti, trovare un cliente per ID, salvare un nuovo cliente, aggiornare o eliminare un cliente.
-Ordine: Offre operazioni simili ai clienti, permettendo di gestire gli ordini in termini di recupero, creazione, aggiornamento ed eliminazione.
-Prodotto: Gestisce i prodotti attraverso operazioni CRUD, consentendo di accedere, creare, aggiornare o eliminare prodotti.
+Customer: The endpoints allow retrieving all customers, finding a customer by ID, saving a new customer, updating, or deleting a customer.
+Order: Offers similar operations to customers, allowing to manage orders in terms of retrieval, creation, updating, and deletion.
+Product: Manages products through CRUD operations, allowing access, creation, updating, or deletion of products.
 Database:
 
-È configurato un database H2 in memoria (spring.datasource.url=jdbc:h2:mem:testdb), che si crea e distrugge con l'applicazione.
-Le proprietà di configurazione del datasource, del driver, dell'autenticazione e del ddl-auto per Hibernate sono specificate nel file application.properties.
-L'applicazione fornisce funzionalità di base per la gestione di un sistema di ordini, consentendo agli utenti di interagire con il database attraverso API REST.
+An in-memory H2 database is configured (spring.datasource.url=jdbc:h2:mem:testdb), which is created and destroyed with the application.
+Configuration properties for the datasource, driver, authentication, and ddl-auto for Hibernate are specified in the application.properties file.
+The application provides basic functionality for managing an order system, allowing users to interact with the database through REST APIs.
